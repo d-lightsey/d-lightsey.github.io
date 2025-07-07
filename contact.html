@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Daniel Lightsey</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact</h1>
+      <p>You can reach me via email at:</p>
+      <p><strong><span id="email">[email protected]</span></strong></p>
+
+      <h2>Academic Profiles</h2>
+      <ul>
+        <li><a href="https://philpeople.org/" target="_blank">PhilPeople</a></li>
+        <li><a href="https://scholar.google.com/" target="_blank">Google Scholar</a></li>
+        <li><a href="https://orcid.org/" target="_blank">ORCID</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Daniel Lightsey</p>
+  </footer>
+
+  <script>
+    // Simple obfuscation against spam bots
+    const emailElement = document.getElementById('email');
+    const name = 'your.email';     // replace with your actual email prefix
+    const domain = 'university.edu'; // replace with your domain
+    emailElement.textContent = name + '@' + domain;
+    emailElement.innerHTML = '<a href="mailto:' + name + '@' + domain + '">' + name + '@' + domain + '</a>';
+  </script>
+</body>
+</html>
