@@ -40,21 +40,51 @@ main {
   padding: 0 1em;
 }
 
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.text-block {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .intro {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;  /* ✅ aligns image and text at the top */
   gap: 2em;
-  align-items: center;
+  margin-bottom: 3em;
 }
 
 .profile-pic {
-  max-width: 200px;
+  max-width: 180px;
+  max-height: 180px;
+  height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .bio {
   flex: 1;
+}
+
+@media (max-width: 600px) {
+  .intro {
+    display: block;
+    text-align: center;
+  }
+  .profile-pic {
+    display: block;
+    margin: 0 auto;
+  }
+  .bio {
+    margin-top: 1em;
+  }
 }
 
 footer {
@@ -75,6 +105,12 @@ main section {
   margin-bottom: 0.5em;
 }
 
+.cv-section {
+  /* max-width: 600px; */
+  /* margin: 0 auto; */
+  /* text-align: left; */
+}
+
 /* Style the download link nicely */
 .cv-download {
   display: inline-block;
@@ -85,16 +121,4 @@ main section {
 
 .cv-download:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-  .intro {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .bio {
-    text-align: left;
-  }
 }
