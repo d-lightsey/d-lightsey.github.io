@@ -94,6 +94,11 @@ main {
   padding: 0 1em;
 }
 
+p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .intro {
   display: flex;
   flex-wrap: wrap;

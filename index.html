@@ -18,7 +18,7 @@
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="teaching.html">Teaching</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pdf/CV.pdf" target="_blank">CV</a></li>
       </ul>
     </nav>
   </div>
@@ -28,18 +28,32 @@
     <section class="intro">
       <img src="images/family_image.jpeg" alt="Daniel Lightsey" class="profile-pic"/>
       <div class="bio">
-        <h1>Daniel Lightsey</h1>
-        <p>Welcome to my website! I’m a Ph.D. student in philosophy at the University of Notre Dame, currently in my third year, with research interests particularly in philosophy of mind, idealism, and metaphysics. I have been married to my beautiful wife, Keilany, for 4 years and we have a precious daughter, Ruth, who turns 1 year old in October. Outside of philosophy, I enjoy cooking, watching movies, running, and serving others with my local church.</p>
-        <h2>Curriculum Vitae</h2>
+        <h1>Daniel Lightsey<br>Ph.D. Student in Philosophy</h1>
+        <h2>Contact</h2>
+        <p>University of Notre Dame<br>Department of Philosophy<br>200 Malloy Hall<br>Notre Dame, IN 46556</p>
+        <p>You can reach me via email at: <strong><span id="email">[email protected]</span></strong></p>
         <p>
-          Here is my <a href="pdf/CV.pdf" target="_blank" class="cv-download">CV</a>.
+          <a href="pdf/CV.pdf" target="_blank" class="cv-download">Curriculum Vitae</a>.
         </p>
       </div>
+    </section>
+
+    <section>
+        <p>I am a Ph.D. student in philosophy at the University of Notre Dame, currently in my third year, with research interests particularly in philosophy of mind, idealism, and metaphysics. I have been married to my beautiful wife, Keilany, for 4 years and we have a precious daughter, Ruth, who turns 1 year old in October. Outside of philosophy, I enjoy cooking, watching movies, running, and serving others with my local church.</p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Daniel Lightsey</p>
   </footer>
+
+  <script>
+    // Simple obfuscation against spam bots
+    const emailElement = document.getElementById('email');
+    const name = 'dlightse';     // replace with your actual email prefix
+    const domain = 'nd.edu'; // replace with your domain
+    emailElement.textContent = name + '@' + domain;
+    emailElement.innerHTML = '<a href="mailto:' + name + '@' + domain + '">' + name + '@' + domain + '</a>';
+  </script>
 </body>
 </html>
