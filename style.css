@@ -2,8 +2,8 @@
 
 body {
   font-family: 'Crimson Text', Georgia, serif;
-  font-size: 18px;         /* Increase base size */
-  line-height: 1.7;        /* More breathing room */
+  font-size: 16px;         /* Increase base size */
+  line-height: 1.5;        /* More breathing room */
   color: #222;
   background-color: #fdfdfd;
   margin: 0;
@@ -22,15 +22,19 @@ h1, h2, h3, nav a {
 }
 
 h1 {
-  font-size: 2em;
-}
-
-h2 {
   font-size: 1.5em;
 }
 
-nav a {
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
   font-size: 1em;
+}
+
+nav a {
+  font-size: 1.25em;
 }
 
 nav ul {
@@ -42,19 +46,13 @@ nav ul {
   padding: 0;
 }
 
-/* nav a { */
-/*   text-decoration: none; */
-/*   color: #333; */
-/*   font-weight: bold; */
-/* } */
-
 nav a.active,
 nav a:hover {
   color: #005588;
 }
 
 main {
-  max-width: 900px;
+  max-width: 800px;
   margin: 2em auto;
   text-align: justify;
   text-justify: inter-word;
@@ -71,10 +69,10 @@ main {
 }
 
 .profile-pic {
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 380px;
+  max-height: 380px;
   flex-shrink: 0;
-  border: 10px solid #ccc;
+  border: 5px solid #444;
 }
 
 .bio {
@@ -104,13 +102,8 @@ footer {
 
 /* Add vertical space between sections */
 main section {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-/* Space out the CV section heading */
-.cv-section h1 {
-  margin-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .cv-download {
